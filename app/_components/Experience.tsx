@@ -29,21 +29,21 @@ const experiences = [
     role: 'CEO of Giftech',
     duration: 'January 2025 - Present',
     description:
-      'Visual designer creating designs for a variety of platforms using Figma, Adobe Illustrator, and InDesign. Also worked with cross-functional teams.',
+      'Visual designer creating designs for a variety of projects for social media marketing and personal brand ',
   },
   {
     company: 'AGM TechPluse NG',
     role: 'Web Developer / Designer Intern',
     duration: 'Dec 2023 - June 2024',
     description:
-      'Our interface designer is our interface engineering in the design of user interfaces for mobile, web software, such as smartphone apps, websites, dashboards, and more.',
+      "I've built mobile responsive ui ux web designs work with CMS and Learnt More about Web Development ",
   },
   {
     company: 'Jobeny Tech NG',
     role: 'Web Developer and P.A.',
     duration: 'June 2024 - Sept 2024',
     description:
-      'Lead Product Photography, Creative Layouts, Animation, Stock Images, Product Shots, Brand Usage, Concept, Digital Strategy, Video & Photo, Corporate Strategy.',
+      'I build websites for JobenyTech and helped boost sales by running ads and managaging essentail documents for the company',
   },
 ]
 

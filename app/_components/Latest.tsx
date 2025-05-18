@@ -51,7 +51,7 @@ export default function LatestWorks() {
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="flex items-center justify-between mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">My Latest Works</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">My Best Works</h2>
           <button
             onClick={() => setShowModal(true)}
             className="text-sm font-medium text-orange-600 hover:underline"
