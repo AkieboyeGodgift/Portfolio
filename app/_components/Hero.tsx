@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const Email = 'mailto:akieboyegodgift@gmail.com'
-const PhoneNumber = 'tel:+2348122981722'
 
 export default function Hero() {
   return (
