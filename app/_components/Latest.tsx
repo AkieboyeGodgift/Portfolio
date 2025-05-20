@@ -21,6 +21,12 @@ export default function LatestWorks() {
       url: 'https://ai-landing-page-1p1r.onrender.com',
     },
     {
+      title: 'Travel Abroad',
+      image: '/images/img3.png',
+      bg: 'bg-green-100',
+      url: 'https://travel-iwwn.onrender.com/',
+    },
+    {
       title: 'Giftech Gaming',
       image: '/images/img4.png',
       bg: 'bg-purple-100',
