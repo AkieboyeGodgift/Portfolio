@@ -12,37 +12,31 @@ export default function LatestWorks() {
       title: '3D Portfolio',
       image: '/images/img1.png',
       bg: 'bg-orange-100',
-      url: 'https://yourprojectlink1.com',
+      url: 'https://giftech-3d-portfolio.onrender.com/',
     },
     {
       title: 'AI Landing Page',
       image: '/images/img2.png',
       bg: 'bg-teal-100',
-      url: 'https://yourprojectlink2.com',
-    },
-    {
-      title: 'Apple Landing Page',
-      image: '/images/img3.png',
-      bg: 'bg-green-100',
-      url: 'https://yourprojectlink3.com',
+      url: 'https://ai-landing-page-1p1r.onrender.com',
     },
     {
       title: 'Giftech Gaming',
       image: '/images/img4.png',
       bg: 'bg-purple-100',
-      url: 'https://yourprojectlink4.com',
+      url: 'https://gitech-gaming.onrender.com/',
     },
     {
       title: 'Nike Animated Slider',
       image: '/images/img5.png',
       bg: 'bg-blue-100',
-      url: 'https://yourprojectlink5.com',
+      url: 'https://shoe-j90c.onrender.com',
     },
     {
       title: 'Twitter Clone',
       image: '/images/img6.png',
       bg: 'bg-red-100',
-      url: 'https://yourprojectlink6.com',
+      url: 'https://github.com/AkieboyeGodgift/twitterclone',
     },
   ]
 
