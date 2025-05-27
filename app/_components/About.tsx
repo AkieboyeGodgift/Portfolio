@@ -30,6 +30,17 @@ export default function About() {
               <h3 className="text-3xl font-bold text-orange-600">20+</h3>
               <p className="text-sm text-gray-600">Happy Clients</p>
             </div>
+            <div>
+              <a
+                href="/akieboye godgift.pdf"
+                download
+                className="inline-block rounded-[40px] border-2 border-transparent bg-orange-600 p-4 text-white transition duration-300 hover:border-orange-600 hover:bg-black"
+              >
+                Download CV
+              </a>
+
+
+            </div>
           </div>
         </div>
 
@@ -39,19 +50,19 @@ export default function About() {
             icon={<Briefcase className="text-white" size={20} />}
             title="Website Design"
             count="76 Projects"
-            bg="bg-teal-600"
+            bg="bg-orange-600"
           />
           <ServiceCard
             icon={<Smartphone className="text-white" size={20} />}
             title="UI UX Design"
             count="63 Projects"
-            bg="bg-yellow-500"
+            bg="bg-orange-600"
           />
           <ServiceCard
             icon={<Palette className="text-white" size={20} />}
             title="Brand Identity"
             count="47 Projects"
-            bg="bg-red-500"
+            bg="bg-orange-600"
           />
         </div>
       </div>

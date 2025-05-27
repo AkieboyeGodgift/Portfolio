@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaGithub, FaGlobe  } from 'react-icons/fa'
+
 
 export default function LatestWorks() {
   const [showModal, setShowModal] = useState(false)
@@ -13,36 +15,42 @@ export default function LatestWorks() {
       image: '/images/img1.png',
       bg: 'bg-orange-100',
       url: 'https://giftech-3d-portfolio.onrender.com/',
+      github: 'https://AkieboyeGodgift/giftech-3d-portfolio',
     },
     {
       title: 'AI Landing Page',
       image: '/images/img2.png',
       bg: 'bg-teal-100',
       url: 'https://ai-landing-page-1p1r.onrender.com',
+      github: 'https://AkieboyeGodgift/ai-landing-page',
     },
     {
       title: 'Travel Abroad',
       image: '/images/img3.png',
       bg: 'bg-green-100',
       url: 'https://travel-iwwn.onrender.com/',
+      github: 'https://AkieboyeGodgift/travel',
     },
     {
-      title: 'Giftech Gaming',
+      title: 'iPhone Landing Page',
       image: '/images/img4.png',
       bg: 'bg-purple-100',
-      url: 'https://gitech-gaming.onrender.com/',
+      url: 'https://iphone2.onrender.com',
+      github: 'https://github.com/AkieboyeGodgift/iphone2',
     },
     {
-      title: 'Nike Animated Slider',
+      title: 'Amazing 3D Portfolio',
       image: '/images/img5.png',
       bg: 'bg-blue-100',
-      url: 'https://shoe-j90c.onrender.com',
+      url: 'https://threed-react-portfolio.onrender.com',
+      github: 'https://github.com/AkieboyeGodgift/3d-react-portfolio',
     },
     {
-      title: 'Twitter Clone',
+      title: 'AI Landing Page 2',
       image: '/images/img6.png',
       bg: 'bg-red-100',
-      url: 'https://github.com/AkieboyeGodgift/twitterclone',
+      url: 'https://ai-landing-page-2.onrender.com',
+      github: 'https://AkieboyeGodgift/giftech-3d-portfolio',
     },
   ]
 
@@ -61,23 +69,35 @@ export default function LatestWorks() {
         </div>
 
         {/* Projects Grid (initial 3 shown) */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3 overlay-hidden">
           {projects.slice(0, 3).map((project, index) => (
-            <Link
+            <div
               key={index}
-              href={project.url}
-              target="_blank"
               className={`${project.bg} rounded-2xl p-6 flex flex-col hover:shadow-lg transition duration-300`}
             >
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">{project.title}</h3>
+              <div className='flex flex-row justify-between'>
+                    <h4 className="text-md font-semibold text-gray-800 mb-2">{project.title}</h4>
+
+                    <div className="flex flex-row items-center space-x-3">
+                      <Link href={project.url} target="_blank" rel="noopener noreferrer">
+                        <FaGlobe className="w-4 h-4 text-black" />
+                      </Link>
+
+                      <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="w-4 h-4 text-black" />
+                      </Link>
+                    </div>
+
+              </div>
+              
               <Image
                 src={project.image}
                 alt={project.title}
                 width={200}
                 height={140}
-                className="rounded-xl object-contain w-full"
+                className="rounded-xl object-contain w-full transition-transform ease-in-out duration-500 hover:scale-110 "
               />
-            </Link>
+            </div>
           ))}
         </div>
       </div>
@@ -88,7 +108,7 @@ export default function LatestWorks() {
           <div className="bg-white w-full max-w-5xl p-6 rounded-xl relative">
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-xl"
+              className="absolute top-4 right-4 text-gray-500 hover:text-red-500 cursor-pointer text-xl"
             >
               &times;
             </button>
@@ -103,7 +123,14 @@ export default function LatestWorks() {
                   target="_blank"
                   className={`${project.bg} min-w-[250px] rounded-2xl p-4 flex-shrink-0 hover:shadow-lg transition duration-300`}
                 >
-                  <h4 className="text-md font-semibold text-gray-800 mb-2">{project.title}</h4>
+                  <div className='flex flex-row justify-between'>
+                    <h4 className="text-md font-semibold text-gray-800 mb-2">{project.title}</h4>
+                    <Link href={project.github}>
+                      <FaGithub className="w-6 h-6 text-black" />
+                    </Link>
+                    
+                  </div>
+                  
                   <Image
                     src={project.image}
                     alt={project.title}

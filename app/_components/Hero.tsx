@@ -29,16 +29,19 @@ export default function Hero() {
 
         <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start sm:gap-6 gap-4">
           <div>
-            <p className="text-3xl font-bold">2+</p>
+            <p className="text-3xl font-bold">3+</p>
             <p className="text-sm">Years Experience</p>
           </div>
 
           {/* Certification Badge */}
-          <div className="text-center border border-orange-300 text-orange-300 rounded-full px-4 py-2 text-xs font-semibold">
-            IDF CERTIFIED <br />
-            PROFESSIONAL <br />
-            WEB DESIGNER
-          </div>
+          <Link href='/Akieboye Godgift - Cerfificate Proffesional Web Developer.png' >
+            <div className="text-center border border-orange-300 text-orange-300 rounded-full px-4 py-2 text-xs font-semibold cursor-pointer hover:bg-white">
+              IDF CERTIFIED <br />
+              PROFESSIONAL <br />
+              WEB DESIGNER
+            </div>
+          </Link>
+          
         </div>
       </div>
 
@@ -50,8 +53,9 @@ export default function Hero() {
           <Image
             src="/profile.png"
             alt="Godgift"
-            fill
-            className="relative z-10 object-cover rounded-xl"
+            fill 
+            className="relative z-10 rounded-xl h-full w-[80px] object-cover object-top transition-transform duration-500 ease-in-out hover:scale-105"
+
           />
         </div>
       </div>
